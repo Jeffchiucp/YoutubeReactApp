@@ -7,6 +7,7 @@ import YTSearch from "youtube-api-search";
 const API_KEY = "AIzaSyAGMgh7QKPSGbjOV-JEVug4TCtyET_Vfuo";
 
 
+
 class App extends Component {
   constructor(props) {
     super(props);
@@ -34,6 +35,13 @@ class App extends Component {
     }, 300);
     return (
       <div>
+        <SearchBar onSearchTermChange={videoSearch} />
+        <VideoDetail video={this.state.selectedVideo} />
+        <VideoList
+          onVideoSelect={selectedVideo => this.setState({ selectedVideo })}
+          videos={this.state.videos}
+        />
+      </div>
     );
   }
 }
