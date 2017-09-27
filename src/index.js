@@ -1,8 +1,8 @@
 import _ from "lodash";
 import React, { Component } from "react";
 import ReactDOM from "react-dom";
-import SearchBar from "components/search_bar";
-import YTSearch from "../node_modules/youtube-api-search";
+import SearchBar from "./components/search_bar";
+import YTSearch from "youtube-api-search";
 
 const API_KEY = "AIzaSyAGMgh7QKPSGbjOV-JEVug4TCtyET_Vfuo";
 
